@@ -14,13 +14,13 @@ public class MyContractController {
 
     @PostMapping("/store")
     public void storeString(@RequestBody String value) throws Exception {
-        String privateKey = "0x4e3e829be55d927b0db97bcca136521c7dae95fb94a1737273e4b2ad4e08292b";
+        String privateKey = "0x0dbbe8e4ae425a6d2687f1a7e3ba17bc98c673636790f1b8ad91193c05875ef1";
         myContractService.storeString(value, privateKey);
     }
 
     @GetMapping("/get")
     public String getString() throws Exception {
-        String privateKey = "0x4e3e829be55d927b0db97bcca136521c7dae95fb94a1737273e4b2ad4e08292b";
+        String privateKey = "0x0dbbe8e4ae425a6d2687f1a7e3ba17bc98c673636790f1b8ad91193c05875ef1";
         return myContractService.getString(privateKey);
     }
 }
